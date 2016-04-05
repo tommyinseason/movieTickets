@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="scripts.js"></script>
+  <title>Movie Tickets</title>
+</head>
+  <body>
+    <div class="jumbotron">
+      <h1>Movie Tickets Today</h1>
+    </div>
+    <div class="container">
+      <h2>Pick Your Next Flick</h2>
+      <form id="movies">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+          <label for="moviesOut">Now Playing:</label>
+          <select class="form-control" id="moviesOut">
+           <option value="0">---Select Movie---</option>
+           <option value="2">Batman v Superman</option>
+           <option value="2">10 Cloverfield Lane</option>
+           <option value="2">Everybody Wants Some</option>
+           <option value="1">Zootopia</option>
+           <option value="1">Deadpool</option>
+           <option value="1">Eddie the Eagle</option>
+         </select>
+       </div>
+       <div class="form-group">
+         <label for="age">Age:</label>
+         <input type="number" class="form-control" id="age">
+       </div>
+       <div class="form-group">
+        <label for="showTime">Showtime:</label>
+          <select class="form-control" id="showTime">
+            <option value="0">---Select Time---</option>
+            <option value="1">Morning</option>
+            <option value="1">Matinee</option>
+            <option value="2">Evening</option>
+            <option value="3">Midnight</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+
+
+
+      </form>
+      <div id="showTickets">
+        <p>Name: <span class="showName"></span></p>
+        <p>Price: <span class="showPrice"></span></p>
+      </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
